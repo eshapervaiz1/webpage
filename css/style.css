@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+header{
+    display: flex;
+    height: 100px;
+    justify-content: space-around;
+    
+}
+ul{
+    display: flex;
+   list-style: none;
+   margin-top: 20px;
+}
+ul li{
+    padding: 10px 10px;
+
+}
+ul li a{
+    text-decoration: none;
+    color: black;
+} 
+li a::after{
+    content:'';
+    display: block;
+    height: 6px;
+    width: 0%;
+    background-color: darkgreen;
+    transition: all .6s;
+}
+li a:hover::after{
+    width: 100%;
+    
+}
+ main{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-top: 30px;
+ }
+main h1{
+    text-align: center;
+   
+    color: darkgreen;
+    margin-bottom: 30px;
+}
+main p{
+    line-height: 40px;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+#left-content{
+  text-align: center;
+  width: 30%;
+  margin-right: 30px;
+  margin-bottom: 30px;
+
+}
+#right-content{
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+#nature-pic{
+    width: 450px;
+    height: auto;
+    border-radius: 50px;
+    border: 2px solid green;
+}
+#btn{
+    height: 50px;
+    background-color: darkgreen;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+width: 110px;
+font-size: 15px;
+border-radius: 20px;
+margin-bottom: 30px;
+border: 2px solid black;
+}
+#btn:hover{
+    background-color: white;
+    color: black;
+    transition: 0.5 all;
+} 
+
+footer{
+     background-color: black; 
+}
+.footercontainer{
+    width: 100%;
+    padding: 70px 30px 20px; 
+}
+.socialicons{
+    display: flex;
+    justify-content: center;
+}
+.socialicons a{
+    list-style:none;
+}
+.socialicons a i{
+    color:white ;
+    margin: 20px;
+    font-size: 30px;
+}
+.socialicons a i:hover{
+    background-color: white;
+    color: rgb(0, 0, 0);
+    height: 30px;
+    width: 30px;
+    border-radius: 10px;
+    transition: 0.5 all;
+}
+.footernav{
+    display: flex;
+    justify-content: center;
+   
+
+}
+.footernav ul li a{
+    color: azure;
+    margin-top: 20px;
+}
+.footerbottom{
+    display: flex;
+    justify-content: center;
+}
+.footerbottom p {
+    color: white;
+}
+/* .mail{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+
+}
+.mail h3{
+    color: white;
+} */
